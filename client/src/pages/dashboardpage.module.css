@@ -1,0 +1,190 @@
+.dashboardPage {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgb(96, 224, 143), rgb(114, 157, 221));
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: min-content;
+  margin: 3rem 0 0 0;
+  padding: 0 0 1rem 0;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.header {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 1rem 0;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 6px 6px 10px black;
+}
+
+.brandHeader {
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+  font-size: 32px;
+  padding: 0 0.5rem 0 0.5rem;
+  background: white;
+  border-radius: 4px;
+}
+
+.userGreeting {
+  color: darkblue;
+}
+
+.newOrUpdateButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 14px;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  height: 2.5rem;
+  border: 0;
+  border-radius: 4px;
+  color: darkblue;
+  background-color: rgba(53, 154, 231, 0.405);
+  box-shadow: 0px 1px 4px darkblue;
+}
+
+.newOrUpdateButtonDisabled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 14px;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  height: 2.5rem;
+  border: 0;
+  border-radius: 4px;
+  color: gray;
+  background-color: lightgray;
+  box-shadow: 0px 1px 4px gray;
+}
+
+.newOrUpdateButton:hover {
+  background-color: rgba(53, 154, 231, 0.733);
+}
+
+.newOrUpdateButton:active {
+  box-shadow: none;
+}
+
+.logoutButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 14px;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  height: 2.5rem;
+  color: black;
+  background-color: rgb(168, 168, 168, 0.405);
+  box-shadow: 0px 1px 4px black;
+  border: 0;
+  border-radius: 4px;
+}
+
+.logoutButton:hover {
+  background-color: rgba(168, 168, 168, 0.727);
+}
+
+.logoutButton:active {
+  box-shadow: none;
+}
+
+.todoList {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  margin: 2rem 0 1rem 0;
+  padding: 1;
+  width: 90%;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.newAgendaContainer {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 0 1rem 0 1rem;
+}
+
+.newAgendaTextarea {
+  flex-grow: 1;
+  font-size: 16px;
+  padding: 0 0.5rem 0 0.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 600px) {
+  .dashboardPage {
+    min-width: 400px;
+    min-height: auto;
+  }
+  .dashboard {
+    width: 95%;
+    margin: 2rem 0 0 0;
+  }
+  .header {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+  .brandHeader {
+    font-size: 24px;
+  }
+  .userGreeting {
+    font-size: 14px;
+  }
+  .buttonText {
+    display: none;
+  }
+  .newAgendaButton {
+    width: 2rem;
+    height: 2rem;
+  }
+  .logoutButton {
+    width: 2rem;
+    height: 2rem;
+  }
+  .todoList {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .dashboard {
+    width: 90%;
+  }
+  .todoList {
+    width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  .dashboard {
+    width: 80%;
+  }
+  .todoList {
+    width: 90%;
+  }
+}

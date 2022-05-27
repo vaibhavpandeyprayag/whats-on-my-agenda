@@ -1,0 +1,93 @@
+.agendaContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+  gap: 1rem;
+}
+
+.agendaContainer:hover {
+  transition: all 0.5s ease;
+  background-color: rgba(211, 211, 211, 0.299);
+}
+
+.content {
+  width: 90%;
+  padding: 1rem 0 1rem 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contentInvisible {
+  display: none;
+  width: 90%;
+  padding: 1rem 0 1rem 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.textEditor {
+  width: 90%;
+  font-size: 16px;
+  padding: 0 0.5rem 0 0.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.textEditorInvisible {
+  display: none;
+  font-size: 16px;
+  padding: 0 0.5rem 0 0.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.editAgendaButton {
+  display: flex;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 2rem;
+  color: darkblue;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.editAgendaButtonDisabled {
+  display: flex;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 2rem;
+  color: gray;
+  background-color: transparent;
+}
+
+.editAgendaButton:hover {
+  background-color: rgba(53, 154, 231, 0.2);
+}
+
+.editAgendaButton:active {
+  background-color: rgba(53, 154, 231, 0.4);
+}
+
+.removeAgendaButton {
+  display: flex;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 2rem;
+  color: rgb(204, 4, 4);
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.removeAgendaButton:hover {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.removeAgendaButton:active {
+  background-color: rgba(255, 0, 0, 0.4);
+}

@@ -1,0 +1,19 @@
+.page {
+  width: 100%;
+  min-width: 400px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgb(96, 224, 143), rgb(114, 157, 221));
+  /* background-color: rgb(73, 51, 81); */
+  /* background-image: linear-gradient(lightgreen, violet); */
+}
+
+@media (max-width: 600px) {
+  .page {
+    min-height: auto;
+    align-items: flex-start;
+    background-image: none;
+  }
+}
